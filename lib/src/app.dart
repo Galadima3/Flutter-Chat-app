@@ -35,14 +35,15 @@ class _HomePageState extends State<HomePage> {
         child: _screens.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        unselectedItemColor: Colors.grey.shade200,
         backgroundColor: Colors.black,
-        items:  const <BottomNavigationBarItem>[
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.facebookMessenger),
+            icon: FaIcon(FontAwesomeIcons.facebookMessenger, size: 20),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.phone),
+            icon: FaIcon(FontAwesomeIcons.phone, size: 20),
             label: '',
           ),
           BottomNavigationBarItem(
@@ -50,7 +51,7 @@ class _HomePageState extends State<HomePage> {
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.gear),
+            icon: FaIcon(FontAwesomeIcons.gear, size: 20),
             label: '',
           ),
         ],

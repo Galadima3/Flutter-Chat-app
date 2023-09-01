@@ -2,6 +2,7 @@ import 'package:chat_app/src/features/calls/presentation/screens/call_screen.dar
 import 'package:chat_app/src/features/chat/presentation/screens/chat_screen.dart';
 import 'package:chat_app/src/features/profile/presentation/screens/profile_screen.dart';
 import 'package:chat_app/src/features/settings/presentation/screens/settings_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -15,11 +16,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
-  static const List<Widget> _screens = [
-    ChatScreen(),
-    CallScreen(),
-    ProfileScreen(),
-    SettingsScreen()
+  static final List<Widget> _screens = [
+    ChatScreen(user: FirebaseAuth.instance.currentUser!),
+    const CallScreen(),
+    const ProfileScreen(),
+    const SettingsScreen()
   ];
 
   void _onItemTapped(int index) {

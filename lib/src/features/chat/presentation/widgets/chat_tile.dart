@@ -23,25 +23,25 @@ class ChatTile extends StatelessWidget {
           backgroundImage: NetworkImage(imageUrl),
           radius: 22,
         ),
-        title: Text(
-          name,
-          style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
-        ),
-      
-        subtitle: Row(
+        title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              message,
-              style: TextStyle(
-                  fontSize: 14, color: const Color(0xFF000000).withOpacity(0.7)),
+              name,
+              style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
             ),
             Text(
               time,
               style: TextStyle(
-                  fontSize: 14, color: const Color(0xFF000000).withOpacity(0.7)),
+                  fontSize: 13.4, color: const Color(0xFF000000).withOpacity(0.7)),
             ),
           ],
+        ),
+      
+        subtitle: Text(
+          message,
+          style: TextStyle(
+              fontSize: 14, color: const Color(0xFF000000).withOpacity(0.7)),
         ),
         
       ),

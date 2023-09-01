@@ -1,4 +1,4 @@
-class User {
+class UserModel {
   final String name;
   final String imageUrl;
   final bool isOnline;
@@ -6,7 +6,7 @@ class User {
   final String? message;
   final String? time;
 
-  User(
+  UserModel(
       {required this.name,
       required this.imageUrl,
       required this.isOnline,
@@ -16,8 +16,8 @@ class User {
 
       });
 
-      factory User.fromJson(Map<String, dynamic> json) {
-    return User(
+      factory UserModel.fromJson(Map<String, dynamic> json) {
+    return UserModel(
       name: json['name'],
       imageUrl: json['imageUrl'],
       isOnline: json['isOnline'],

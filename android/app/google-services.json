@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1053467109561",
+    "project_id": "mylez-flutter-chat-app",
+    "storage_bucket": "mylez-flutter-chat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053467109561:android:bcd62b579f61cdba531368",
+        "android_client_info": {
+          "package_name": "com.example.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053467109561-9in0jhe6c88qkc7ehgnss4gd126gdqkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB1N-hWsFAIn4OKZdYuu73D_tFEUvxq4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053467109561-9in0jhe6c88qkc7ehgnss4gd126gdqkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
